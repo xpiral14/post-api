@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/post.css">
+    <link rel="stylesheet" href="/stylesheets/menu.css">
+    <title><%= post.title %></title>
+</head>
+
+<body>
+
+    <% include partials/menu %>
+    <div class="main">
+        <div class="post-content">
+            <div class="post-header">
+                <h2><%= post.title %></h2>
+                <% for(let i = 0; i < post.tags.length; i++) { %>
+                <span class="tags"><%= post.tags[i] %></span>
+                <%} %>
+                <h3><%= post.author %></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-image"> </div>
+
+    <div class="main">
+        <div class="post-content">
+            <div class="post-body">
+                <p><%= post.content %></p>
+            </div>
+            <div class="post-footer">
+                <div class="comments">
+                    <% for(let i = 0; i < post.comments.length; i++) { %>
+                    <h3><%= post.comments[i].name %></h3>
+                    <p><%= post.comments[i].content %></p>
+                    <%} %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

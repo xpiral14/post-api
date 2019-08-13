@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><% phrase %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/home.css' />
+  <link rel="stylesheet" href="/stylesheets/menu.css">
+</head>
+
+<body>
+
+  <% include partials/menu %>
+  <div class="main">
+    <div class="posts">
+      <section class="post-last">
+        <div class="last-content">
+          <h2><%= posts[0].title %></h2>
+          <p><%= posts[0].content.substr(0,240) + '...' %></p>
+          <br><br>
+          <a href="/post/<%= posts[posts.length -1]._id %>" class="btn-last">Ver Post</a>
+        </div>
+        <div class="last-img"
+          style="background-image: url('/images/post-api.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+      </section>
+      <% for(let i = 0; i < posts.length; i++){ %>
+      <a href="/post/<%=posts[i]._id %>" class="post-link">
+        <div class="post">
+
+          <div class="post-title">
+            <h2><%= posts[i].title %></h2>
+          </div>
+
+          <div class="post-preview">
+            <p><%= posts[i].content.substr(0, 80) + '...' %></p>
+          </div>
+        </div>
+      </a>
+      <% } %>
+    </div>
+  </div>
+
+</body>
+
+</html>

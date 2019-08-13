@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  font-family: "Nunito";
+}
+.main form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main form input, .main form textarea, .main form button {
+  font-family: Arial;
+  padding: 30px;
+  font-size: 20px;
+  background-color: #D2F2D2;
+  border: none;
+}
+.main form input {
+  margin-bottom: 30px;
+  color: #707070;
+}
+.main form textarea {
+  height: 300px;
+  resize: none;
+}
+
+/*# sourceMappingURL=createpost.css.map */

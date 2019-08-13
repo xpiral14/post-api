@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.post-content {
+  font-family: "Nunito";
+}
+.post-content .post-header, .post-content .post-body, .post-content .post-footer {
+  width: 60%;
+  margin: 0 auto;
+}
+.post-content .post-header {
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+.post-content .post-header h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+.post-content .author {
+  text-align: center;
+}
+.post-content .post-body p {
+  text-align: justify;
+  line-height: 24px;
+}
+.post-content .post-footer {
+  border-top: 1px solid blue;
+}
+
+.post-image {
+  height: 50vh;
+  background-color: #D2F2D2;
+}
+
+/*# sourceMappingURL=post.css.map */

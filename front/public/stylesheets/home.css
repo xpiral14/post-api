@@ -1,0 +1,122 @@
+.main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.post-last {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin: 40px auto;
+}
+.post-last .last-content {
+  width: 50%;
+}
+.post-last .last-img {
+  width: 50%;
+}
+.post-last .btn-last {
+  margin-top: 20px;
+  padding: 10px 40px;
+  background-color: #707070;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #D2F2D2;
+  transition: background-color 0.3s ease;
+}
+.post-last .btn-last:hover {
+  background-color: #535353;
+}
+
+.posts {
+  font-family: "Nunito";
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.post-link {
+  width: 23.6%;
+}
+
+.post-link .post {
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #D2F2D2;
+  color: #707070;
+  padding: 20px;
+  box-shadow: 0 8px 10px #00000006;
+  transition: box-shadow 0.3s ease;
+  align-items: stretch;
+}
+
+.post-link .post-title {
+  height: 40%;
+}
+
+.post-link h2 {
+  line-height: 37px;
+}
+
+.post-link p {
+  color: #212121;
+}
+
+.post:hover {
+  box-shadow: 0 3px 10px #00000018;
+}
+
+@media (max-width: 1366px) {
+  .post-link {
+    width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    width: 75%;
+  }
+
+  .posts {
+    display: flex;
+    align-items: stretch;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    width: 80%;
+  }
+
+  .post-last {
+    flex-direction: column-reverse;
+  }
+  .post-last .last-content, .post-last last-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .post-link {
+    width: 46%;
+  }
+}
+@media (max-width: 500px) {
+  .post-last {
+    flex-direction: column-reverse;
+  }
+  .post-last .last-content, .post-last last-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .post-link {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
